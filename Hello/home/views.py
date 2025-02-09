@@ -9,11 +9,11 @@ def index(request):
     return render(request, 'index.html', context)
 
 def about(request):
-    return HttpResponse("this is the about page")
+    return render(request, 'about.html')
 
 def services(request):
-    return HttpResponse("this is the service page")
+     return render(request, 'services.html')
 
 def contact(request):
-    return HttpResponse("this is the contact page")
+    return render(request, 'contact.html')
 # Create your views here.
